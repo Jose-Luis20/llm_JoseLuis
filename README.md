@@ -47,3 +47,13 @@ curl -X POST http://localhost:11434/api/generate -d '{
   "stream": false
 }'
 ````
+
+## 6. Formas de guardas cambios al Readme.md
+
+git add .
+
+git commit -m "UPDATED README.md"
+
+git push -u origin main
+
+
