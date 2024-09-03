@@ -50,12 +50,13 @@ curl -X POST http://localhost:11434/api/generate -d '{
 
 ## 6. Formas de guardas cambios al Readme.md
 
+````bash
 git add .
 
 git commit -m "UPDATED README.md"
 
 git push -u origin main
-
+````
 
 ## 7. Consultar a groq
 
@@ -81,3 +82,13 @@ curl "https://api.groq.com/openai/v1/chat/completions" \
 export GROQ_API_KEY=<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>
 
 env
+
+
+import requests
+
+url = 'https://www.w3schools.com/python/demopage.php'
+myobj = {'somekey': 'somevalue'}
+
+x = requests.post(url, json = myobj)
+
+print(x.text)
