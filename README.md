@@ -57,3 +57,27 @@ git commit -m "UPDATED README.md"
 git push -u origin main
 
 
+## 7. Consultar a groq
+
+Estructura básica para realizar una consulta a groq mediante se API REST
+
+````bash
+curl "https://api.groq.com/openai/v1/chat/completions" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer ${GROQ_API_KEY}" \
+  -d '{
+         "messages": [
+           {
+             "role": "user",
+             "content": "¿Por que el cielo es azul?"
+           }
+         ],
+         "model": "llama3-8b-8192",
+         "stream": false         
+       }'
+  
+````
+export GROQ_API_KEY=<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>
+
+env
